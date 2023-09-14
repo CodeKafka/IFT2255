@@ -1,0 +1,60 @@
+\documentclass[8pt]{report}
+\input{preamble}
+
+\title{\Huge{Cours 1 Introduction}\\}
+\author{\huge{Franz Girardin}}
+\date{5 Septembre 2023}
+\lstset{inputencoding=utf8/latin1}
+
+\usepackage{balance}
+\usepackage{lmodern}
+\usepackage{dirtree}
+\usepackage{titlesec}
+\titleformat{\chapter}
+  {\small\bfseries} % format
+  {}                % label
+  {0pt}             % sep
+  {\huge}           % before-code
+
+
+\usepackage{lipsum}
+\usepackage{titling}
+\renewcommand\maketitlehooka{\null\mbox{}\vfill}
+\renewcommand\maketitlehookd{\vfill\null}
+
+
+
+
+
+\usepackage{afterpage}
+\newcommand\myemptypage{
+    \null
+    \thispagestyle{empty}
+    \addtocounter{page}{-1}
+    \newpage
+    }
+
+%====================================================================
+
+%====================================================================
+\begin{document}
+\maketitle
+\pagebreak
+\tableofcontents
+\pagebreak
+
+\chapter{Introduction}
+\section*{Définitions simples}
+
+\begin{Definition*}{Génie Logiciel}{}
+    Branche de l'ingénierie associée au développment de logiciels
+    utilisant des principes, méthode et procédures définis. 
+\end{Definition*}
+
+\begin{Definition}{Logiciel}{}
+    Collection de code exécutable, ainsi que de bibliothèques 
+    documentation associés.  
+\end{Definition}
+Il est possible 
+\end{document}
+
