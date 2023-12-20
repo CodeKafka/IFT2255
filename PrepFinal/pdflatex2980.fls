@@ -1,0 +1,4 @@
+PWD /home/cryptopsy/Semesters/Fall2023/IFT2255/PrepFinal
+INPUT /etc/texmf/web2c/texmf.cnf
+INPUT /usr/share/texmf/web2c/texmf.cnf
+INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
