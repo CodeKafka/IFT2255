@@ -39,7 +39,7 @@
 
 
 \begin{multicols*}{2}
-    \chapter{Object Constraint Language OCL \texttt{\S Amal 14}  }
+    \chapter{Object Constraint Language OCL \texttt{\S \; Amal 14}  }
 
         \section{Expression de contraintes}
         \begin{note}{}{}
@@ -1810,7 +1810,7 @@ public class ObserverPatternExample {
     \end{itemize}
         
 
-    \chapter{Implémentation}
+    \chapter{Implémentation \texttt{\S \; Amal 18}   }
 
     \begin{Definitionx}{Implémentation}{}
         Processus de traduction de la conception détaillé en code exécutable par une machine. 
@@ -2408,6 +2408,859 @@ public class ObserverPatternExample {
        \end{figure}
 
 
+       \begin{itemize}
+        \item \textbf{Test d'acceptation}  
+       \end{itemize}
+
+
+       \begin{Concept}{Test d'acceptation}{}
+           Dans un \textbf{test d'acceptation}, le client décide si le logiciel satisfait ses besoins  
+           Il évalue donc l'exactitude, la robustesse, la performance, la documentation, etc. 
+           La différence entre les \textbf{tests de systèmes} et les \textbf{tests d'acceptations} 
+           réside en la nature des données. Le premier type utilise des 
+           \textcolor{myb}{donées fictives} dans un \textcolor{myb}{environnement contrôlé}; le second 
+           se fait sur des \textcolor{myb}{données réelles} dans un \textcolor{myb}{environnment d'utilisation réelle}.   
+
+       \end{Concept}
+
+
+       \begin{figure}[H]
+        \begin{center}
+            \includegraphics[width=0.45\textwidth]{TAlphaBeta.png}
+        \end{center}
+       \end{figure}
+
+       \section{Qui devrait tester}
+
+       \begin{itemize}
+        \item Le programmeur effectue des tests informels de son code
+        \item L’équipe AQ effectue des tests systématiques
+        \item Le programmeur corrige les modules qui ont échoué
+       \end{itemize}
+
+       \begin{note}{}{}
+           Tous les tests doivent être \textbf{planifié à l'avance}. Il doivent aussi prévoir ce qui 
+           est attendu. Les tests doivent être \textbf{conservés} et documentés.   
+       \end{note}
+
+
+       \section{Combien de faute faut-il identifier}
+
+       Pour chaque artéfact, le gestionnaire doit prédéterminer le \textbf{nombre maximal de faute} 
+       qu'on peut trouver grâce aux tests. Si ce nombre est atteint, il faut 
+       \begin{itemize}
+        \item Se débarasser de l'artéfact
+        \item Reconcevoir le composant 
+        \item Reimplémenter le code
+       \end{itemize}
+       
+
+       \section{En pratique, quand s'arrêter ?}
+
+       \begin{figure}[H]
+        \begin{center}
+            \includegraphics[width=0.45\textwidth]{ArreterTests.png}
+        \end{center}
+       \end{figure}
+
+
+       \chapter{Tests unitaires \texttt{\S Amal 20}  }
+
+       \begin{figure}[H]
+        \begin{center}
+            \includegraphics[width=0.45\textwidth]{testUnitairedef.png}
+        \end{center}
+       \end{figure}
+
+
+       \section{Quand effectuer les tests unitaires}
+       
+
+       \begin{itemize}
+           \item Avant l’implémentation
+           \item Pendant l’implémentation
+           \item Pendant la réingénierie (refactoring) du code 
+           \item Quand on programme en équipe 
+       \end{itemize}
+
+        \begin{itemize}
+            \item \textbf{Types de tests unitaires}  
+        \end{itemize}
+
+       \begin{figure}[H]
+        \begin{center}
+            \includegraphics[width=0.35\textwidth]{typeTU.png}
+       \end{center}
+        \end{figure}
+
+
+        \begin{Concept}{Test sanitaire}{}
+            L'objectif est de vérifier l'identité et l'invariance par la \textbf{composition} 
+            \begin{itemize}
+                \item \textbf{Stratégie}  
+                \begin{itemize}
+                    \item[$\blacktriangleright$] Exécuter une méthode et \textcolor{myb}{son contraire}  
+                    \item[$\blacktriangleright$] Exécuter une méthode \textcolor{myb}{à répétition}  
+                    \item[$\rhd$] \texttt{convertRoRoman(convertFromRoman("MMXVII")) = "MMXVII"}  
+                \end{itemize}
+            \end{itemize}
+        \end{Concept}
+
+        \begin{note}{}{}
+            Les tests unitaires \textbf{ne sont pas des exigences}; ils servent à vérifié et 
+            son implémenté à posteriori de exigences. Mais il est quand même \textbf{exigé} que 
+            \textit{tous les tests passent}.   
+        \end{note}
+
+
+        \begin{figure}[H]
+            \begin{center}
+                \includegraphics[width=0.45\textwidth]{TerminologieTest}
+            \end{center}
+        \end{figure}
+
+        \section{Converture de tests pour une unité}
+        
+
+        \begin{itemize}
+            \item \textbf{Valeurs normales}  
+                \begin{itemize}
+                    \item[$\blacktriangleright$] Valeurs aléatoires raisonnables couvrant toutes les partitions d’entrée
+                \end{itemize}
+            \item \textbf{Cas limites}  
+                \begin{itemize}
+                    \item[$\blacktriangleright$] 0, \texttt{Integer.MAX\_VALUE}, tableau vide, string vide
+                \end{itemize}
+            \item \textbf{Valeur inattendues}  
+                \begin{itemize}
+                    \item[$\blacktriangleright$] \texttt{null}, caractères invalides dans un string, index négatif
+                \end{itemize}
+            \item \textbf{Différentes catégories d'entrées}  
+                \begin{itemize}
+                    \item[$\blacktriangleright$] Entier positif, négatif, zéro
+                \end{itemize}
+            \item Différents comportement possibles
+                \begin{itemize}
+                    \item[$\blacktriangleright$] Chaque message d’erreur, toutes les options d’un menu
+                \end{itemize}
+
+        \end{itemize}
+
+
+        \begin{EExample}{Tests unitaires}{}
+
+
+\begin{lstlisting}[style=JavaDraculaWhite]
+ public class Calculator {
+    public int add(int a, int b) {
+        return a + b;
+    }
+
+    public int subtract(int a, int b) {
+        return a - b;
+    }
+
+    public int multiply(int a, int b) {
+        return a * b;
+    }
+
+    public int divide(int a, int b) {
+        return a / b;
+    }
+}   
+\end{lstlisting}
+        Le code ci-haut peut être évalué par les tests suivants. 
+            
+        \end{EExample}
+
+
+        \begin{figure}[H]
+            \begin{center}
+                \includegraphics[width=0.5\textwidth]{ExTUnit.png}
+            \end{center}
+        \end{figure}
+
+
+        \section{Syntaxe JUnit}
+
+        \begin{figure}[H]
+            \begin{center}
+                \includegraphics[width=0.45\textwidth]{syntaxeJUnit.png}
+            \end{center}
+        \end{figure}
+
+
+        \section{Assertions}
+
+
+
+        \begin{figure}[H]
+            \begin{center}
+                \includegraphics[width=0.45\textwidth]{Assertions.png}
+            \end{center}
+        \end{figure}
+
+
+        \begin{EExample}{Tester une valeur de retour}{}
+\begin{lstlisting}[style=JavaDraculaWhite]
+import static org.junit.Assert.assertEquals;
+import org.junit.Test;
+
+public class CalculatorTest {
+    Calculator sc = new Calculator();
+
+    @Test
+    public void testadd() {
+        int output1 = sc.add(2, 3);
+        assertEquals(5, output1);
+    }
+
+    @Test
+    public void testsubtract() {
+        int output2 = sc.subtract(2, 3);
+        assertEquals(-1, output2);
+    }
+
+    @Test
+    public void testmultiply() {
+        int output3 = sc.multiply(2, 3);
+        assertEquals(6, output3);
+    }
+
+    @Test(expected = ArithmeticException.class)
+    public void testdivide() {
+        sc.divide(3, 0);
+    }
+}
+\end{lstlisting}           
+        \end{EExample}
+
+
+        \begin{EExample}{Autre exemple de test}{}
+\begin{lstlisting}[style=JavaDraculaWhite]
+import org.junit.*;
+import static org.junit.Assert.*;
+import java.util.ArrayList;
+
+public class TestArrayIntList {
+    @Test
+    public void testAddGet1() {
+        ArrayList<Integer> list = new ArrayList<>();
+        list.add(42);
+        list.add(-3);
+        list.add(15);
+        assertEquals(42, (int) list.get(0));
+        assertEquals(-3, (int) list.get(1));
+        assertEquals(15, (int) list.get(2));
+    }
+
+    @Test
+    public void testIsEmpty() {
+        ArrayList<Integer> list = new ArrayList<>();
+        assertTrue(list.isEmpty());
+        list.add(123);
+        assertFalse(list.isEmpty());
+        list.remove(0);
+        assertTrue(list.isEmpty());
+    }
+
+    // ...
+}    
+\end{lstlisting}            
+        \end{EExample}
+
+        \section{Conseils pour rédaction de tests unitaires}
+
+
+\begin{EExample}{4 Directives clées}{}
+\begin{lstlisting}[style=JavaDraculaWhite]
+import org.junit.Test;
+import static org.junit.Assert.assertEquals;
+import java.util.Date;
+
+public class DateTest {
+    @Test
+    public void test1() {
+        Date d = new Date(2050 - 1900, 2 - 1, 15);
+        d.setDate(d.getDate() + 4); 
+        assertEquals(2050, d.getYear() + 1900); 
+        assertEquals(2, d.getMonth() + 1); 
+        assertEquals(19, d.getDate()); 
+    }
+
+    @Test
+    public void test2() {
+        Date d = new Date(2050 - 1900, 2 - 1, 15);
+        d.setDate(d.getDate() + 14); 
+        assertEquals("year after 
+        +14 days", 2050, d.getYear() + 1900);
+
+        assertEquals("month after 
+        +14 days", 3, d.getMonth() + 1);
+
+        assertEquals("day after 
+        +14 days", 1, d.getDate());
+    }
+}
+    
+\end{lstlisting} 
+    \begin{itemize}
+        \item Les \textcolor{myb}{valeur attendues} quand on appelle la méthode \texttt{assertEquals(...)}
+            doivent se trouver à gauche (1er argument). 
+        \item Il est préférable de donner des noms longs et descriptifs aux méthodes 
+        \item Les test cases peuvent avoir un message expliquant ce qui est vérifié; la 
+            \texttt{méthode assertEquals(...)} accepte les String pour cela. 
+        \item On peut donner des \textbf{noms descriptifs} aux valeurs attendues et celles réelles.   
+    \end{itemize}       
+
+\begin{lstlisting}[style=JavaDraculaWhite]
+import org.junit.Test;
+import static org.junit.Assert.assertEquals;
+import java.util.Date;
+
+public class DateTest {
+
+    @Test
+    public void test_addDays_withinSameMonth_1() {
+        Date actual = new Date(2050, 2, 15);
+        actual.addDays(4); 
+        Date expected = new Date(2050, 2, 19);
+        assertEquals("date after +4 days", expected, actual);
+    }
+
+    @Test
+    public void test_addDays_wrapToNextMonth_2() {
+        Date actual = new Date(2050, 2, 15);
+        actual.addDays(14); 
+        Date expected = new Date(2050, 3, 1);
+        assertEquals("date after +14 days", expected, actual);
+    }
+
+    // ...
+}
+
+\end{lstlisting}
+\end{EExample}
+
+    \begin{itemize}
+        \item \textbf{Test avec} \texttt{timeout}    
+            \begin{itemize}
+                \item[$\blacktriangleright$] La méthode sera une \textbf{échec} si elle ne finit pas de 
+                    fonctionner dans les \texttt{5000 ms}  
+            \end{itemize}
+    \end{itemize}
+
+\begin{lstlisting}[style=JavaDraculaWhite]
+    @Test(timeout = 5000)
+    public void name() {
+    //...
+    }
+\end{lstlisting}
+
+
+\begin{lstlisting}[style=JavaDraculaWhite]
+    private static final int TIMOUT = 2000; 
+    @Test(timeout = TIMEOUT)
+    public void name() {
+    //...
+    }
+\end{lstlisting}
+
+
+    \begin{itemize}
+        \item \textbf{Tester des exceptions}
+    \end{itemize}
+
+    \begin{Syntaxe}{Pour tester exception}{}
+\begin{lstlisting}[style=JavaDraculaWhite]
+    // Remplace ExceptionType par la classe de l'Excep. voulue
+     @Test(expected = ExceptionType.class)
+     public void name() {
+        //...
+     }
+\end{lstlisting}        
+    \end{Syntaxe}
+
+    \begin{itemize}
+        \item[$\blacktriangleright$] Le test passe si une exception est levé à l'exécution 
+        \item[$\blacktriangleright$] Le test échoue sinon. 
+    \end{itemize}
+
+    \begin{EExample}{Test d'exception}{}
+\begin{lstlisting}[style=JavaDraculaWhite]
+@Test(expected = IndexOutOfBoundsException.class) 
+public void testBadIndex() {
+    ArrayList list = new ArrayList(); 
+    list.get(4);
+}
+\end{lstlisting}
+        
+    \end{EExample}
+
+
+    \section{Tester en isolation}
+
+    \begin{itemize}
+        \item \textbf{Il faut créer des objets passif (dummy), faux ou proxy (mock, stub, préprogammés)
+            pour les besoin du cas de test uniquement}  
+        \item Utile lorsque les tests précèdent le développement. 
+    \end{itemize}
+
+\begin{lstlisting}[style=JavaDraculaWhite]
+ import junit.framework.TestCase;
+
+public class TestGame extends TestCase {
+    private Game game;
+    private Ship fighter;
+
+    public void setUp() throws BadGameException {
+        this.game = new Game();
+        this.fighter = this.game.createFighter("001");
+    }
+
+    public void tearDown() {
+        this.game.shutdown();
+    }
+
+    public void testCreateFighter() {
+        assertEquals("Fighter did not have the correct identifier", "001", 
+        this.fighter.getId());
+    }
+
+    public void testSameFighters() {
+        Ship fighter2 = this.game.createFighter("001");
+        assertSame("createFighter with same id should return same object", 
+        this.fighter, fighter2);
+    }
+
+    public void testGameInitialState() {
+        assertTrue("A new game should not be started yet", 
+        !this.game.isPlaying());
+    }
+}    
+
+\end{lstlisting}
+    Ce code est une série de tests unitaires pour une classe de jeu. Il teste si un vaisseau spatial (fighter) est créé avec le bon identifiant, si la méthode createFighter retourne le même objet pour un identifiant donné, et si le jeu n'est pas en état de lecture après son initialisation. Ces tests visent à s'assurer que la logique de création et l'état initial du jeu sont corrects.
+
+
+    \begin{Exercice}{}{}
+        \begin{itemize}
+            \item Créez une classe Database et une classe Service. Écrivez la méthode appelée
+            isAvailable dans la classe Database qui renvoie uniquement false. 
+            \item Dans la classe Service, le constructeur doit stocker un objet Database en tant
+            qu'attribut. Écrivez une méthode appelée isDatabaseAvailable qui vérifie la
+            disponibilité actuelle de l’objet de base de données.
+            \item Dans votre Test, vérifiez la disponibilité de la base de
+                données dans la classe Service.
+        \end{itemize}
+
+\begin{lstlisting}[style=JavaDraculaWhite]
+public class Database {
+    public boolean isAvailable() {
+        return false; // Always returns false
+    }
+}
+
+
+public class Service {
+    private Database database;
+
+    public Service(Database db) {
+        this.database = db;
+    }
+
+    public boolean isDatabaseAvailable() {
+        return database.isAvailable();
+    }
+}
+
+
+import org.junit.Test;
+import static org.junit.Assert.assertFalse;
+
+public class ServiceTest {
+    @Test
+    public void testDatabaseAvailability() {
+        Database db = new Database();
+        Service service = new Service(db);
+        assertFalse(service.isDatabaseAvailable());
+    }
+}
+
+
+\end{lstlisting}
+
+    \end{Exercice}
+
+
+    \begin{figure}[H]
+        \begin{center}
+            \includegraphics[width=0.45\textwidth]{qtypique1.png}
+        \end{center}
+    \end{figure}
+    
+
+    \begin{figure}[H]
+        \begin{center}
+            \includegraphics[width=0.45\textwidth]{qtypique2.png}
+        \end{center}
+    \end{figure}
+
+
+    \chapter{Déploiement \texttt{\S \; Amal 21}  }
+    \begin{note}{}{}
+        Les stratégies de déploiement tiennent compte du fait que le produit 
+        est très \textbf{fragile} et qu'il peut \textbf{changer}; il faut également 
+        penser à ce qui va se passer \textcolor{myb}{après le déploiement}.   
+    \end{note}
+
+    \begin{itemize}
+        \item \textbf{Versionnement de logiciel}  
+    \end{itemize}
+    \begin{figure}[H]
+        \begin{center}
+            \includegraphics[width=0.45\textwidth]{versionnementlogi.png}
+        \end{center}
+    \end{figure}
+
+
+    \begin{itemize}
+        \item \textbf{Séquence de versionnement typique}  
+    \end{itemize}
+
+
+    \begin{figure}[H]
+        \begin{center}
+            \includegraphics[width=0.45\textwidth]{seqvers.png}
+        \end{center}
+    \end{figure}
+
+
+    \begin{itemize}
+        \item \textbf{Environnements}  
+    \end{itemize}
+
+
+    \begin{figure}[H]
+        \begin{center}
+            \includegraphics[width=0.45\textwidth]{environnementDevl.png}
+        \end{center}
+    \end{figure}
+
+
+    \begin{itemize}
+        \item \textbf{Virtualisation}  
+    \end{itemize}
+
+
+    \begin{figure}[H]
+        \begin{center}
+            \includegraphics[width=0.45\textwidth]{virtualisation.png}
+        \end{center}
+    \end{figure}
+
+    \begin{itemize}
+        \item \textbf{Transition de l'application d'une environnement à un autre}  
+    \end{itemize}  
+    \begin{Definitionx}{Transition}{}
+        Processus à travers lequel on effectue \textbf{plusieurs opérations} : assemblage et configuration, 
+        livraison, transfert, installation, actvation, mise à jour, etc. Ces opérations 
+        sont faites pour rendre le logiciel \textbf{utilisable par le client}.   
+    \end{Definitionx}
+
+
+    \begin{itemize}
+        \item \textbf{Assemblage et configuration}  
+    \end{itemize}
+
+    \begin{figure}[H]
+        \begin{center}
+            \includegraphics[width=0.45\textwidth]{Deploiement1.png}
+        \end{center}
+    \end{figure}
+    
+
+
+
+    \begin{itemize}
+        \item \textbf{Livraison}  
+    \end{itemize}
+    
+
+    \begin{figure}[H]
+        \begin{center}
+            \includegraphics[width=0.45\textwidth]{Deploiement2.png}
+        \end{center}
+    \end{figure}
+    
+    \begin{itemize}
+        \item \textbf{Transfert}  
+    \end{itemize}
+
+
+    \begin{figure}[H]
+        \begin{center}
+            \includegraphics[width=0.45\textwidth]{Deploiement3.png}
+        \end{center}
+    \end{figure}
+    
+
+    \begin{itemize}
+        \item \textbf{Installation}  
+    \end{itemize}
+
+
+    \begin{figure}[H]
+        \begin{center}
+            \includegraphics[width=0.45\textwidth]{Deploiement4.png}
+        \end{center}
+    \end{figure}
+    
+
+    \begin{itemize}
+        \item \textbf{Installation}  
+    \end{itemize}
+
+
+    \begin{figure}[H]
+        \begin{center}
+            \includegraphics[width=0.45\textwidth]{Deploiement5.png}
+        \end{center}
+    \end{figure}
+
+
+    \begin{itemize}
+        \item \textbf{Enjeux de livraison}  
+    \end{itemize}
+
+
+    \begin{figure}[H]
+        \begin{center}
+            \includegraphics[width=0.45\textwidth]{Deploiement6.png}
+        \end{center}
+    \end{figure}
+
+
+    \begin{itemize}
+        \item \textbf{DevOps}  
+    \end{itemize}
+
+
+
+    \begin{figure}[H]
+        \begin{center}
+            \includegraphics[width=0.45\textwidth]{DevOps.png}
+        \end{center}
+    \end{figure}
+
+
+    \pagebreak
+
+    \begin{itemize}
+        \item \textbf{Patique DevOps}  
+    \end{itemize}
+
+
+     \begin{figure}[H]
+        \begin{center}
+            \includegraphics[width=0.45\textwidth]{DevOps2.png}
+        \end{center}
+    \end{figure}
+
+
+    \begin{itemize}
+        \item \textbf{Intégration continue et livraison continue}  
+    \end{itemize}
+
+
+     \begin{figure}[H]
+        \begin{center}
+            \includegraphics[width=0.45\textwidth]{integration.png}
+        \end{center}
+    \end{figure}
+
+
+    \begin{itemize}
+        \item \textbf{Outilsde compilation}  
+    \end{itemize}
+       
+
+     \begin{figure}[H]
+        \begin{center}
+            \includegraphics[width=0.45\textwidth]{integration2.png}
+        \end{center}
+    \end{figure}
+
+
+
+    \chapter{Licence et éthique \texttt{\S \; Amal 23 }  }
+
+    \section{Licences}
+
+
+    \begin{itemize}
+        \item \textbf{Licence logiciel}
+    \end{itemize}
+
+
+    \begin{Definitionx}{}{}
+        Contrat par lequel le \textcolor{myb}{titulaire des droits} définit les conditions dans lesquelles 
+        un tiers peut utiliser, diffuser ou modifier le programme. 
+    \end{Definitionx}
+
+    \begin{note}{}{}
+        Le titulaire \textbf{concède la licence} et ajoute des exigences  
+        \begin{itemize}
+            \item[$\blacktriangleright$] Il est interdit d'utiliser le logiciel à plusieurs, 
+                publier des mesures de performance
+            \item[$\blacktriangleright$] Le titulaire ne concède pas le droit intellectuel. 
+        \end{itemize}
+    \end{note}
+
+    Donc, pour le grand public, acheter un logiciel revient à obtenir une licence et accepter le contrat de licence 
+    utilisateur final (End User Licence Agreement, EULA)
+
+
+    \begin{itemize}
+        \item \textbf{EULA}  
+    \end{itemize}
+
+
+    \begin{Definitionx}{End User License Agreement}{}
+        Contrat entre l’auteur de l’application et l’utilisateur de l’application. 
+        Ce contrat est similaire à une entente de location. L'utilisateur paye pour des privilèges 
+        d’utilisation du logiciel. En échange, il promet de se conformer à toutes les restrictions spécifiées 
+        Les utilisateur « acceptent » les termes du EULA en déballant l’application, l’installant ou l’utilisant
+        L'utilisateur peut refuser les termes lors de l’installation
+    \end{Definitionx}
+
+
+    \begin{itemize}
+        \item \textbf{Licences de code source}
+    \end{itemize}
+
+
+    \begin{figure}[H]
+        \begin{center}
+            \includegraphics[width=0.45\textwidth]{codesourcelicence1.png}
+        \end{center}
+    \end{figure}
+    
+
+    \begin{itemize}
+        \item \textbf{Types de licences pour code source}  
+    \end{itemize}
+
+
+    \begin{figure}[H]
+        \begin{center}
+            \includegraphics[width=0.45\textwidth]{codesourcelicence2.png}
+        \end{center}
+    \end{figure}
+
+
+    \begin{itemize}
+        \item \textbf{Licences de logiciel}  
+    \end{itemize}
+
+
+    \begin{figure}[H]
+        \begin{center}
+            \includegraphics[width=0.45\textwidth]{licencelogiciel.png}
+        \end{center}
+    \end{figure}
+
+
+    \section{Étique professionnelle}
+
+
+    \begin{itemize}
+        \item \textbf{\textcolor{red}{Who cares ?}  }  
+    \end{itemize}
+
+
+    \begin{Definitionx}{Éthique professionnelle}{}
+        Ensemble de règles, lois et code de conduite qui gouverne comment une
+        profession gère ses professionnels et ceux à l’extérieur de la profession. 
+        L'éthique est différence d'un \textbf{code moral} ou \textbf{légal}.     
+    \end{Definitionx}
+
+    \begin{itemize}
+        \item \textbf{À quoi ça sert}  
+    \end{itemize}
+
+    \begin{figure}[H]
+        \begin{center}
+            \includegraphics[width=0.45\textwidth]{Ethique1.png}
+        \end{center}
+    \end{figure}
+    
+
+
+    \begin{itemize}
+        \item \textbf{Pourquoi est-ce nécessaire en informatique ?}  
+        \begin{itemize}
+            \item[$\blacktriangleright$] Les logiciels peuvent causer du \textbf{tord}; ils ont un pouvoir d'influence 
+            \item[$\blacktriangleright$] Permet d'être fiers de notre travail (\textbf{\texttt{doubt}}).
+            \item[$\blacktriangleright$] Not get fired by HR
+        \end{itemize}
+    \end{itemize}
+
+
+    \begin{itemize}
+        \item \textbf{Source et Références}  
+        \begin{itemize}
+            \item[$\rhd$] \textit{Software Engineering Code of Ethics and Professional Practice}  
+            \item[$\rhd$] \textit{IEEE-CS} et \textit{ACM}
+        \end{itemize}
+    \end{itemize}
+
+
+    \begin{itemize}
+        \item \textbf{Extraits}  
+    \end{itemize}
+
+
+    \begin{figure}[H]
+        \begin{center}
+            \includegraphics[width=0.45\textwidth]{Ethique2.png}
+        \end{center}
+    \end{figure}
+
+\end{multicols*}
+
+    \begin{figure}[H]
+        \begin{center}
+            \includegraphics[width=0.75\textwidth]{patcreav1.png}
+        \end{center}
+    \end{figure}
+
+
+
+        
+     \begin{figure}[H]
+        \begin{center}
+            \includegraphics[width=0.75\textwidth]{patcreav2.png}
+        \end{center}
+    \end{figure}
+       
+
+
+        
+    \begin{figure}[H]
+        \begin{center}
+            \includegraphics[width=0.75\textwidth]{patcreav3.png}
+        \end{center}
+    \end{figure}
+
+
+
+
+       
+
+
+
+
        
 
 
@@ -2440,7 +3293,6 @@ public class ObserverPatternExample {
 
 
 
-\end{multicols*}
 
 
 

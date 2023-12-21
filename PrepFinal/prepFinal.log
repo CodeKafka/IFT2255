@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.1.19)  20 DEC 2023 18:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.1.19)  21 DEC 2023 08:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1538,13 +1538,22 @@ File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.49 ...berline {5}ImplÃ©mentation}{17}{chapter.5}
-                                                  % [1])
+l.49 ...muskip {.2777em} Amal 18} }{18}{chapter.5}
+                                                  % [1] [2])
 \tf@toc=\write5
 \openout5 = `prepFinal.toc'.
 
- [2]
+ [3]
 Chapitre 1.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\leavevmode@ifvmode' on input line 42.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \kern 2.77695pt
+(hyperref)                removed on input line 42.
+
 LaTeX Font Info:    Font shape `T1/calligra/m/n' will be
 (Font)              scaled to size 17.28003pt on input line 44.
 
@@ -1572,7 +1581,7 @@ Underfull \hbox (badness 7740) in paragraph at lines 136--138
 []\T1/kurier/m/n/10 L'expression OCL qui sui-vra s'ap-plique
  []
 
-[3]
+[4]
 Underfull \hbox (badness 10000) in paragraph at lines 189--191
 [][]\T1/lmtt/m/n/10 def :[] montantImposable []: Real =
  []
@@ -1601,7 +1610,7 @@ Overfull \hbox (15.25938pt too wide) in paragraph at lines 262--263
 \T1/lmtt/m/n/10 s1.substring(i1, i2), s.toUpper(), s.toLower() 
  []
 
-[4]
+[5]
 LaTeX Font Info:    Font shape `T1/calligra/m/sc' will be
 (Font)              scaled to size 17.28003pt on input line 332.
 
@@ -1633,10 +1642,10 @@ Overfull \hbox (5.00925pt too wide) in paragraph at lines 423--425
 [][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[5] (/usr/share/texlive/texmf-dist/tex/latex/base/latin1.def
+[6] (/usr/share/texlive/texmf-dist/tex/latex/base/latin1.def
 File: latin1.def 2021/02/14 v1.3d Input encoding file
 )
-<ClassDExo1.png, id=355, 1928.70563pt x 868.74562pt>
+<ClassDExo1.png, id=402, 1928.70563pt x 868.74562pt>
 File: ClassDExo1.png Graphic file (type png)
 <use ClassDExo1.png>
 Package pdftex.def Info: ClassDExo1.png  used on input line 502.
@@ -1653,14 +1662,14 @@ Overfull \hbox (62.75908pt too wide) in paragraph at lines 520--522
 [][][][][][][][][][][][][][][][][][][][] 
  []
 
-<ClassDExo2.png, id=357, 1819.5478pt x 1070.49937pt>
+<ClassDExo2.png, id=404, 1819.5478pt x 1070.49937pt>
 File: ClassDExo2.png Graphic file (type png)
 <use ClassDExo2.png>
 Package pdftex.def Info: ClassDExo2.png  used on input line 541.
 (pdftex.def)             Requested size: 250.41425pt x 147.32071pt.
 (/usr/share/texlive/texmf-dist/tex/latex/base/latin1.def
 File: latin1.def 2021/02/14 v1.3d Input encoding file
-) [6 <./ClassDExo1.png>]
+) [7 <./ClassDExo1.png>]
 Overfull \hbox (10.25923pt too wide) in paragraph at lines 555--556
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
@@ -1702,7 +1711,7 @@ Overfull \hbox (5.00925pt too wide) in paragraph at lines 629--632
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[7 <./ClassDExo2.png>]
+[8 <./ClassDExo2.png>]
 Chapitre 2.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
@@ -1713,7 +1722,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \kern 2.77695pt
 (hyperref)                removed on input line 660.
 
-[8]
+[9]
 Chapitre 3.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
@@ -1724,12 +1733,12 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \kern 2.77695pt
 (hyperref)                removed on input line 837.
 
-[9] (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+[10] (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 ) (/usr/share/texlive/texmf-dist/tex/latex/base/latin1.def
 File: latin1.def 2021/02/14 v1.3d Input encoding file
-) [10]
-<SpaguettiCode.png, id=606, 1420.55719pt x 523.9575pt>
+) [11]
+<SpaguettiCode.png, id=652, 1420.55719pt x 523.9575pt>
 File: SpaguettiCode.png Graphic file (type png)
 <use SpaguettiCode.png>
 Package pdftex.def Info: SpaguettiCode.png  used on input line 1016.
@@ -1745,12 +1754,12 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \kern 2.77695pt
 (hyperref)                removed on input line 1063.
 
-<patronTypes.png, id=615, 1670.49094pt x 711.4078pt>
+<patronTypes.png, id=661, 1670.49094pt x 711.4078pt>
 File: patronTypes.png Graphic file (type png)
 <use patronTypes.png>
 Package pdftex.def Info: patronTypes.png  used on input line 1080.
 (pdftex.def)             Requested size: 250.41425pt x 106.64143pt.
-[11 <./SpaguettiCode.png>] (/usr/share/texlive/texmf-dist/tex/latex/base/latin1.def
+[12 <./SpaguettiCode.png>] (/usr/share/texlive/texmf-dist/tex/latex/base/latin1.def
 File: latin1.def 2021/02/14 v1.3d Input encoding file
 ) (/usr/share/texlive/texmf-dist/tex/latex/base/latin1.def
 File: latin1.def 2021/02/14 v1.3d Input encoding file
@@ -1758,35 +1767,35 @@ File: latin1.def 2021/02/14 v1.3d Input encoding file
 File: latin1.def 2021/02/14 v1.3d Input encoding file
 ) (/usr/share/texlive/texmf-dist/tex/latex/base/latin1.def
 File: latin1.def 2021/02/14 v1.3d Input encoding file
-) [12 <./patronTypes.png>] (/usr/share/texlive/texmf-dist/tex/latex/base/latin1.def
+) [13 <./patronTypes.png>] (/usr/share/texlive/texmf-dist/tex/latex/base/latin1.def
 File: latin1.def 2021/02/14 v1.3d Input encoding file
 ) (/usr/share/texlive/texmf-dist/tex/latex/base/latin1.def
 File: latin1.def 2021/02/14 v1.3d Input encoding file
-) [13]
-<shapesFactory.png, id=822, 1668.2325pt x 1065.22969pt>
+) [14]
+<shapesFactory.png, id=868, 1668.2325pt x 1065.22969pt>
 File: shapesFactory.png Graphic file (type png)
 <use shapesFactory.png>
 Package pdftex.def Info: shapesFactory.png  used on input line 1396.
 (pdftex.def)             Requested size: 194.77136pt x 124.35992pt.
  (/usr/share/texlive/texmf-dist/tex/latex/base/latin1.def
 File: latin1.def 2021/02/14 v1.3d Input encoding file
-) [14 <./shapesFactory.png>] (/usr/share/texlive/texmf-dist/tex/latex/base/latin1.def
+) [15 <./shapesFactory.png>] (/usr/share/texlive/texmf-dist/tex/latex/base/latin1.def
 File: latin1.def 2021/02/14 v1.3d Input encoding file
 )
-<patronMethode.png, id=934, 2045.39156pt x 1111.15125pt>
+<patronMethode.png, id=980, 2045.39156pt x 1111.15125pt>
 File: patronMethode.png Graphic file (type png)
 <use patronMethode.png>
 Package pdftex.def Info: patronMethode.png  used on input line 1486.
 (pdftex.def)             Requested size: 222.58856pt x 120.90454pt.
-<PatronStrategy.png, id=935, 2119.92pt x 1151.05031pt>
+<PatronStrategy.png, id=981, 2119.92pt x 1151.05031pt>
 File: PatronStrategy.png Graphic file (type png)
 <use PatronStrategy.png>
 Package pdftex.def Info: PatronStrategy.png  used on input line 1508.
 (pdftex.def)             Requested size: 222.58856pt x 120.85506pt.
  (/usr/share/texlive/texmf-dist/tex/latex/base/latin1.def
 File: latin1.def 2021/02/14 v1.3d Input encoding file
-) [15 <./patronMethode.png> <./PatronStrategy.png>]
-<PatronBuilder.png, id=999, 2192.19pt x 894.34125pt>
+) [16 <./patronMethode.png> <./PatronStrategy.png>]
+<PatronBuilder.png, id=1046, 2192.19pt x 894.34125pt>
 File: PatronBuilder.png Graphic file (type png)
 <use PatronBuilder.png>
 Package pdftex.def Info: PatronBuilder.png  used on input line 1600.
@@ -1795,10 +1804,19 @@ Package pdftex.def Info: PatronBuilder.png  used on input line 1600.
 File: latin1.def 2021/02/14 v1.3d Input encoding file
 ) (/usr/share/texlive/texmf-dist/tex/latex/base/latin1.def
 File: latin1.def 2021/02/14 v1.3d Input encoding file
-) [16 <./PatronBuilder.png>]
+) [17 <./PatronBuilder.png>]
 Chapitre 5.
-[17]
-<BonnesPraiquesProg.png, id=1208, 1588.43437pt x 844.65562pt>
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\leavevmode@ifvmode' on input line 1813.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \kern 2.77695pt
+(hyperref)                removed on input line 1813.
+
+[18]
+<BonnesPraiquesProg.png, id=1256, 1588.43437pt x 844.65562pt>
 File: BonnesPraiquesProg.png Graphic file (type png)
 <use BonnesPraiquesProg.png>
 Package pdftex.def Info: BonnesPraiquesProg.png  used on input line 1893.
@@ -1808,28 +1826,28 @@ Underfull \hbox (badness 10000) in paragraph at lines 1901--1903
 []\T1/lmtt/m/n/10 freqAvarage\T1/kurier/m/n/10 , \T1/lmtt/m/n/10 fraquencyMaximum\T1/kurier/m/n/10 , \T1/lmtt/m/n/10 minFr\T1/kurier/m/n/10 ,
  []
 
-[18 <./BonnesPraiquesProg.png>]
-<ORganisation.png, id=1220, 1331.72531pt x 560.8453pt>
+[19 <./BonnesPraiquesProg.png>]
+<ORganisation.png, id=1267, 1331.72531pt x 560.8453pt>
 File: ORganisation.png Graphic file (type png)
 <use ORganisation.png>
 Package pdftex.def Info: ORganisation.png  used on input line 1957.
 (pdftex.def)             Requested size: 250.41425pt x 105.45775pt.
-<MethodesDebogage.png, id=1221, 1453.68094pt x 587.94656pt>
+<MethodesDebogage.png, id=1268, 1453.68094pt x 587.94656pt>
 File: MethodesDebogage.png Graphic file (type png)
 <use MethodesDebogage.png>
 Package pdftex.def Info: MethodesDebogage.png  used on input line 2011.
 (pdftex.def)             Requested size: 83.46858pt x 33.75911pt.
-<cyclevie1.png, id=1222, 1053.9375pt x 647.41875pt>
+<cyclevie1.png, id=1269, 1053.9375pt x 647.41875pt>
 File: cyclevie1.png Graphic file (type png)
 <use cyclevie1.png>
 Package pdftex.def Info: cyclevie1.png  used on input line 2021.
 (pdftex.def)             Requested size: 233.72054pt x 143.56862pt.
-<cyclevie2.png, id=1223, 1073.51062pt x 648.17157pt>
+<cyclevie2.png, id=1270, 1073.51062pt x 648.17157pt>
 File: cyclevie2.png Graphic file (type png)
 <use cyclevie2.png>
 Package pdftex.def Info: cyclevie2.png  used on input line 2028.
 (pdftex.def)             Requested size: 233.72054pt x 141.11464pt.
-<symptCause.png, id=1224, 1807.5028pt x 834.86906pt>
+<symptCause.png, id=1271, 1807.5028pt x 834.86906pt>
 File: symptCause.png Graphic file (type png)
 <use symptCause.png>
 Package pdftex.def Info: symptCause.png  used on input line 2035.
@@ -1849,139 +1867,372 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \kern 2.77695pt
 (hyperref)                removed on input line 2040.
 
-[19 <./ORganisation.png> <./MethodesDebogage.png> <./cyclevie1.png> <./cyclevie2.png> <./symptCause.png>]
-<perti.png, id=1245, 1638.87282pt x 1021.56656pt>
+[20 <./ORganisation.png> <./MethodesDebogage.png> <./cyclevie1.png> <./cyclevie2.png> <./symptCause.png>]
+<perti.png, id=1291, 1638.87282pt x 1021.56656pt>
 File: perti.png Graphic file (type png)
 <use perti.png>
 Package pdftex.def Info: perti.png  used on input line 2055.
 (pdftex.def)             Requested size: 194.77136pt x 121.39801pt.
-<perfo.png, id=1246, 1537.99594pt x 954.56625pt>
+<perfo.png, id=1292, 1537.99594pt x 954.56625pt>
 File: perfo.png Graphic file (type png)
 <use perfo.png>
 Package pdftex.def Info: perfo.png  used on input line 2068.
 (pdftex.def)             Requested size: 194.77136pt x 120.879pt.
-<cap3.png, id=1247, 1225.57875pt x 420.82219pt>
+<cap3.png, id=1293, 1225.57875pt x 420.82219pt>
 File: cap3.png Graphic file (type png)
 <use cap3.png>
 Package pdftex.def Info: cap3.png  used on input line 2084.
 (pdftex.def)             Requested size: 194.77136pt x 66.87701pt.
-<cap4.png, id=1248, 992.95969pt x 866.48718pt>
+<cap4.png, id=1294, 992.95969pt x 866.48718pt>
 File: cap4.png Graphic file (type png)
 <use cap4.png>
 Package pdftex.def Info: cap4.png  used on input line 2103.
 (pdftex.def)             Requested size: 194.77136pt x 169.96254pt.
-<cap5.png, id=1249, 1115.66812pt x 695.59875pt>
+<cap5.png, id=1295, 1115.66812pt x 695.59875pt>
 File: cap5.png Graphic file (type png)
 <use cap5.png>
 Package pdftex.def Info: cap5.png  used on input line 2118.
 (pdftex.def)             Requested size: 194.77136pt x 121.4344pt.
- [20 <./perti.png> <./perfo.png> <./cap3.png> <./cap4.png>]
-<cap6.png, id=1267, 1094.58937pt x 670.75594pt>
+ [21 <./perti.png> <./perfo.png> <./cap3.png> <./cap4.png>]
+<cap6.png, id=1313, 1094.58937pt x 670.75594pt>
 File: cap6.png Graphic file (type png)
 <use cap6.png>
 Package pdftex.def Info: cap6.png  used on input line 2133.
 (pdftex.def)             Requested size: 194.77136pt x 119.34914pt.
-<cap7.png, id=1268, 1114.91531pt x 889.07156pt>
+<cap7.png, id=1314, 1114.91531pt x 889.07156pt>
 File: cap7.png Graphic file (type png)
 <use cap7.png>
 Package pdftex.def Info: cap7.png  used on input line 2152.
 (pdftex.def)             Requested size: 194.77136pt x 155.30496pt.
-<cap8.png, id=1269, 1114.91531pt x 694.09312pt>
+<cap8.png, id=1315, 1114.91531pt x 694.09312pt>
 File: cap8.png Graphic file (type png)
 <use cap8.png>
 Package pdftex.def Info: cap8.png  used on input line 2167.
 (pdftex.def)             Requested size: 194.77136pt x 121.2457pt.
-<VerifValid.png, id=1270, 1562.83875pt x 787.44188pt>
+<VerifValid.png, id=1316, 1562.83875pt x 787.44188pt>
 File: VerifValid.png Graphic file (type png)
 <use VerifValid.png>
 Package pdftex.def Info: VerifValid.png  used on input line 2187.
 (pdftex.def)             Requested size: 222.58856pt x 112.15155pt.
-<LogiFiable.png, id=1271, 1276.01718pt x 1031.35312pt>
+<LogiFiable.png, id=1317, 1276.01718pt x 1031.35312pt>
 File: LogiFiable.png Graphic file (type png)
 <use LogiFiable.png>
 Package pdftex.def Info: LogiFiable.png  used on input line 2197.
 (pdftex.def)             Requested size: 250.41425pt x 202.39563pt.
- [21 <./cap5.png> <./cap6.png> <./cap7.png> <./cap8.png> <./VerifValid.png>]
-<inspection.png, id=1290, 1510.89468pt x 1175.14032pt>
+ [22 <./cap5.png> <./cap6.png> <./cap7.png> <./cap8.png> <./VerifValid.png>]
+<inspection.png, id=1336, 1510.89468pt x 1175.14032pt>
 File: inspection.png Graphic file (type png)
 <use inspection.png>
 Package pdftex.def Info: inspection.png  used on input line 2212.
 (pdftex.def)             Requested size: 250.41425pt x 194.75047pt.
-<CodeReview.png, id=1291, 1598.22093pt x 959.83594pt>
+<CodeReview.png, id=1337, 1598.22093pt x 959.83594pt>
 File: CodeReview.png Graphic file (type png)
 <use CodeReview.png>
 Package pdftex.def Info: CodeReview.png  used on input line 2239.
 (pdftex.def)             Requested size: 211.46507pt x 126.99458pt.
-<Verif.png, id=1296, 1722.435pt x 1014.79124pt>
+<Verif.png, id=1342, 1722.435pt x 1014.79124pt>
 File: Verif.png Graphic file (type png)
 <use Verif.png>
 Package pdftex.def Info: Verif.png  used on input line 2266.
 (pdftex.def)             Requested size: 211.46507pt x 124.57237pt.
- [22 <./LogiFiable.png> <./inspection.png> <./CodeReview.png> <./Verif.png>]
-<strattest1.png, id=1315, 1230.09563pt x 1075.01625pt>
+ [23 <./LogiFiable.png> <./inspection.png> <./CodeReview.png> <./Verif.png>]
+<strattest1.png, id=1361, 1230.09563pt x 1075.01625pt>
 File: strattest1.png Graphic file (type png)
 <use strattest1.png>
 Package pdftex.def Info: strattest1.png  used on input line 2292.
 (pdftex.def)             Requested size: 250.41425pt x 218.83783pt.
-<strattest2.png, id=1316, 1557.56906pt x 737.75626pt>
+<strattest2.png, id=1362, 1557.56906pt x 737.75626pt>
 File: strattest2.png Graphic file (type png)
 <use strattest2.png>
 Package pdftex.def Info: strattest2.png  used on input line 2301.
 (pdftex.def)             Requested size: 250.41425pt x 118.60626pt.
-<strattest3.png, id=1317, 937.25156pt x 827.34094pt>
+<strattest3.png, id=1363, 937.25156pt x 827.34094pt>
 File: strattest3.png Graphic file (type png)
 <use strattest3.png>
 Package pdftex.def Info: strattest3.png  used on input line 2309.
 (pdftex.def)             Requested size: 250.41425pt x 221.04956pt.
-<Stratblanche.png, id=1322, 1514.65875pt x 858.95906pt>
+<Stratblanche.png, id=1368, 1514.65875pt x 858.95906pt>
 File: Stratblanche.png Graphic file (type png)
 <use Stratblanche.png>
 Package pdftex.def Info: Stratblanche.png  used on input line 2330.
 (pdftex.def)             Requested size: 250.41425pt x 142.01047pt.
-<TypeDeTest.png, id=1323, 1614.03pt x 585.68813pt>
+<TypeDeTest.png, id=1369, 1614.03pt x 585.68813pt>
 File: TypeDeTest.png Graphic file (type png)
 <use TypeDeTest.png>
 Package pdftex.def Info: TypeDeTest.png  used on input line 2349.
 (pdftex.def)             Requested size: 250.41425pt x 90.86115pt.
- [23 <./strattest1.png> <./strattest2.png> <./strattest3.png> <./Stratblanche.png>]
-<test1.png, id=1336, 1646.40094pt x 746.03719pt>
+ [24 <./strattest1.png> <./strattest2.png> <./strattest3.png> <./Stratblanche.png>]
+<test1.png, id=1383, 1646.40094pt x 746.03719pt>
 File: test1.png Graphic file (type png)
 <use test1.png>
 Package pdftex.def Info: test1.png  used on input line 2365.
 (pdftex.def)             Requested size: 250.41425pt x 113.4603pt.
-<test2.png, id=1337, 1558.32187pt x 636.87938pt>
+<test2.png, id=1384, 1558.32187pt x 636.87938pt>
 File: test2.png Graphic file (type png)
 <use test2.png>
 Package pdftex.def Info: test2.png  used on input line 2384.
 (pdftex.def)             Requested size: 250.41425pt x 102.34009pt.
-<testfonc1.png, id=1338, 1480.02937pt x 914.66719pt>
+<testfonc1.png, id=1385, 1480.02937pt x 914.66719pt>
 File: testfonc1.png Graphic file (type png)
 <use testfonc1.png>
 Package pdftex.def Info: testfonc1.png  used on input line 2396.
 (pdftex.def)             Requested size: 250.41425pt x 154.75166pt.
-<testfonc2.png, id=1339, 1376.89406pt x 707.64375pt>
+<testfonc2.png, id=1386, 1376.89406pt x 707.64375pt>
 File: testfonc2.png Graphic file (type png)
 <use testfonc2.png>
 Package pdftex.def Info: testfonc2.png  used on input line 2406.
 (pdftex.def)             Requested size: 250.41425pt x 128.6877pt.
- [24 <./TypeDeTest.png> <./test1.png> <./test2.png> <./testfonc1.png> <./testfonc2.png>] (./prepFinal.aux)
+<TAlphaBeta.png, id=1387, 1667.47969pt x 889.82437pt>
+File: TAlphaBeta.png Graphic file (type png)
+<use TAlphaBeta.png>
+Package pdftex.def Info: TAlphaBeta.png  used on input line 2429.
+(pdftex.def)             Requested size: 250.41425pt x 133.61725pt.
+ [25 <./TypeDeTest.png> <./test1.png> <./test2.png> <./testfonc1.png> <./testfonc2.png> <./TAlphaBeta.png>]
+<ArreterTests.png, id=1411, 951.555pt x 683.55376pt>
+File: ArreterTests.png Graphic file (type png)
+<use ArreterTests.png>
+Package pdftex.def Info: ArreterTests.png  used on input line 2462.
+(pdftex.def)             Requested size: 250.41425pt x 179.87883pt.
+
+Chapitre 7.
+<testUnitairedef.png, id=1412, 1965.59344pt x 1010.27437pt>
+File: testUnitairedef.png Graphic file (type png)
+<use testUnitairedef.png>
+Package pdftex.def Info: testUnitairedef.png  used on input line 2471.
+(pdftex.def)             Requested size: 250.41425pt x 128.70422pt.
+<typeTU.png, id=1413, 1355.8153pt x 1105.88156pt>
+File: typeTU.png Graphic file (type png)
+<use typeTU.png>
+Package pdftex.def Info: typeTU.png  used on input line 2492.
+(pdftex.def)             Requested size: 194.77136pt x 158.85533pt.
+
+Overfull \hbox (22.71214pt too wide) in paragraph at lines 2504--2505
+[]\T1/lmtt/m/n/10 convertRoRoman(convertFromRoman("MMXVII"))
+ []
+
+<TerminologieTest.png, id=1418, 1432.60219pt x 886.81313pt>
+File: TerminologieTest.png Graphic file (type png)
+<use TerminologieTest.png>
+Package pdftex.def Info: TerminologieTest.png  used on input line 2518.
+(pdftex.def)             Requested size: 250.41425pt x 155.00517pt.
+[26 <./ArreterTests.png> <./testUnitairedef.png> <./typeTU.png> <./TerminologieTest.png>] (/usr/share/texlive/texmf-dist/tex/latex/base/latin1.def
+File: latin1.def 2021/02/14 v1.3d Input encoding file
+)
+<ExTUnit.png, id=1432, 1390.44469pt x 301.125pt>
+File: ExTUnit.png Graphic file (type png)
+<use ExTUnit.png>
+Package pdftex.def Info: ExTUnit.png  used on input line 2579.
+(pdftex.def)             Requested size: 278.23994pt x 60.25609pt.
+
+Overfull \hbox (5.0pt too wide) in paragraph at lines 2579--2580
+ [] 
+ []
+
+<syntaxeJUnit.png, id=1433, 1217.2978pt x 596.2275pt>
+File: syntaxeJUnit.png Graphic file (type png)
+<use syntaxeJUnit.png>
+Package pdftex.def Info: syntaxeJUnit.png  used on input line 2588.
+(pdftex.def)             Requested size: 250.41425pt x 122.64592pt.
+<Assertions.png, id=1434, 1210.5225pt x 738.50906pt>
+File: Assertions.png Graphic file (type png)
+<use Assertions.png>
+Package pdftex.def Info: Assertions.png  used on input line 2599.
+(pdftex.def)             Requested size: 250.41425pt x 152.77011pt.
+(/usr/share/texlive/texmf-dist/tex/latex/base/latin1.def
+File: latin1.def 2021/02/14 v1.3d Input encoding file
+) (/usr/share/texlive/texmf-dist/tex/latex/base/latin1.def
+File: latin1.def 2021/02/14 v1.3d Input encoding file
+) [27 <./ExTUnit.png> <./syntaxeJUnit.png> <./assertions.png>] (/usr/share/texlive/texmf-dist/tex/latex/base/latin1.def
+File: latin1.def 2021/02/14 v1.3d Input encoding file
+)
+Underfull \hbox (badness 6157) in paragraph at lines 2711--2713
+[]\T1/kurier/m/n/10 Les test cases peuvent avoir un mes-sage
+ []
+
+
+Underfull \hbox (badness 6876) in paragraph at lines 2711--2713
+\T1/kurier/m/n/10 ex-pli-quant ce qui est vé-ri-fié ; la \T1/lmtt/m/n/10 méthode
+ []
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/latin1.def
+File: latin1.def 2021/02/14 v1.3d Input encoding file
+) (/usr/share/texlive/texmf-dist/tex/latex/base/latin1.def
+File: latin1.def 2021/02/14 v1.3d Input encoding file
+) (/usr/share/texlive/texmf-dist/tex/latex/base/latin1.def
+File: latin1.def 2021/02/14 v1.3d Input encoding file
+) (/usr/share/texlive/texmf-dist/tex/latex/base/latin1.def
+File: latin1.def 2021/02/14 v1.3d Input encoding file
+) (/usr/share/texlive/texmf-dist/tex/latex/base/latin1.def
+File: latin1.def 2021/02/14 v1.3d Input encoding file
+) [28] (/usr/share/texlive/texmf-dist/tex/latex/base/latin1.def
+File: latin1.def 2021/02/14 v1.3d Input encoding file
+) (/usr/share/texlive/texmf-dist/tex/latex/base/latin1.def
+File: latin1.def 2021/02/14 v1.3d Input encoding file
+)
+<qtypique1.png, id=1603, 1440.88312pt x 815.29594pt>
+File: qtypique1.png Graphic file (type png)
+<use qtypique1.png>
+Package pdftex.def Info: qtypique1.png  used on input line 2898.
+(pdftex.def)             Requested size: 250.41425pt x 141.68369pt.
+<qtypique2.png, id=1604, 1477.77094pt x 887.56593pt>
+File: qtypique2.png Graphic file (type png)
+<use qtypique2.png>
+Package pdftex.def Info: qtypique2.png  used on input line 2905.
+(pdftex.def)             Requested size: 250.41425pt x 150.39665pt.
+ [29 <./qtypique1.png>]
+Chapitre 8.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\leavevmode@ifvmode' on input line 2910.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \kern 2.77695pt
+(hyperref)                removed on input line 2910.
+
+<versionnementlogi.png, id=1688, 1525.19812pt x 1062.97125pt>
+File: versionnementlogi.png Graphic file (type png)
+<use versionnementlogi.png>
+Package pdftex.def Info: versionnementlogi.png  used on input line 2922.
+(pdftex.def)             Requested size: 250.41425pt x 174.52304pt.
+<seqvers.png, id=1689, 1523.6925pt x 791.95876pt>
+File: seqvers.png Graphic file (type png)
+<use seqvers.png>
+Package pdftex.def Info: seqvers.png  used on input line 2934.
+(pdftex.def)             Requested size: 250.41425pt x 130.14793pt.
+<environnementDevl.png, id=1690, 1489.06313pt x 980.16188pt>
+File: environnementDevl.png Graphic file (type png)
+<use environnementDevl.png>
+Package pdftex.def Info: environnementDevl.png  used on input line 2946.
+(pdftex.def)             Requested size: 250.41425pt x 164.83058pt.
+<virtualisation.png, id=1691, 1534.98468pt x 992.20688pt>
+File: virtualisation.png Graphic file (type png)
+<use virtualisation.png>
+Package pdftex.def Info: virtualisation.png  used on input line 2958.
+(pdftex.def)             Requested size: 250.41425pt x 161.86pt.
+<Deploiement1.png, id=1692, 1369.36594pt x 750.55406pt>
+File: Deploiement1.png Graphic file (type png)
+<use Deploiement1.png>
+Package pdftex.def Info: Deploiement1.png  used on input line 2978.
+(pdftex.def)             Requested size: 250.41425pt x 137.24696pt.
+[30 <./qtypique2.png> <./versionnementlogi.png> <./seqvers.png> <./environnementDevl.png> <./virtualisation.png>]
+<Deploiement2.png, id=1709, 1357.32094pt x 817.55438pt>
+File: Deploiement2.png Graphic file (type png)
+<use Deploiement2.png>
+Package pdftex.def Info: Deploiement2.png  used on input line 2992.
+(pdftex.def)             Requested size: 250.41425pt x 150.82104pt.
+<Deploiement3.png, id=1710, 1409.265pt x 663.22781pt>
+File: Deploiement3.png Graphic file (type png)
+<use Deploiement3.png>
+Package pdftex.def Info: Deploiement3.png  used on input line 3003.
+(pdftex.def)             Requested size: 250.41425pt x 117.84773pt.
+<Deploiement4.png, id=1711, 1473.25406pt x 669.2503pt>
+File: Deploiement4.png Graphic file (type png)
+<use Deploiement4.png>
+Package pdftex.def Info: Deploiement4.png  used on input line 3015.
+(pdftex.def)             Requested size: 250.41425pt x 113.75061pt.
+<Deploiement5.png, id=1712, 1483.04062pt x 681.29532pt>
+File: Deploiement5.png Graphic file (type png)
+<use Deploiement5.png>
+Package pdftex.def Info: Deploiement5.png  used on input line 3027.
+(pdftex.def)             Requested size: 250.41425pt x 115.0286pt.
+<Deploiement6.png, id=1713, 1122.44344pt x 944.7797pt>
+File: Deploiement6.png Graphic file (type png)
+<use Deploiement6.png>
+Package pdftex.def Info: Deploiement6.png  used on input line 3039.
+(pdftex.def)             Requested size: 250.41425pt x 210.76424pt.
+<DevOps.png, id=1714, 1492.07437pt x 1003.49907pt>
+File: DevOps.png Graphic file (type png)
+<use DevOps.png>
+Package pdftex.def Info: DevOps.png  used on input line 3052.
+(pdftex.def)             Requested size: 250.41425pt x 168.40294pt.
+ [31 <./Deploiement1.png> <./Deploiement2.png> <./Deploiement3.png> <./Deploiement4.png> <./Deploiement5.png> <./Deploiement6.png> <./DevOps.png>]
+<DevOps2.png, id=1733, 1528.20938pt x 788.9475pt>
+File: DevOps2.png Graphic file (type png)
+<use DevOps2.png>
+Package pdftex.def Info: DevOps2.png  used on input line 3066.
+(pdftex.def)             Requested size: 250.41425pt x 129.26784pt.
+<integration.png, id=1734, 1126.2075pt x 538.26094pt>
+File: integration.png Graphic file (type png)
+<use integration.png>
+Package pdftex.def Info: integration.png  used on input line 3078.
+(pdftex.def)             Requested size: 250.41425pt x 119.6826pt.
+<integration2.png, id=1735, 1074.26344pt x 587.19376pt>
+File: integration2.png Graphic file (type png)
+<use integration2.png>
+Package pdftex.def Info: integration2.png  used on input line 3090.
+(pdftex.def)             Requested size: 250.41425pt x 136.87056pt.
+
+Chapitre 9.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\leavevmode@ifvmode' on input line 3096.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \kern 2.77695pt
+(hyperref)                removed on input line 3096.
+
+<codesourcelicence1.png, id=1740, 1463.4675pt x 636.87938pt>
+File: codesourcelicence1.png Graphic file (type png)
+<use codesourcelicence1.png>
+Package pdftex.def Info: codesourcelicence1.png  used on input line 3145.
+(pdftex.def)             Requested size: 250.41425pt x 108.96776pt.
+<codesourcelicence2.png, id=1741, 1623.81656pt x 1082.54437pt>
+File: codesourcelicence2.png Graphic file (type png)
+<use codesourcelicence2.png>
+Package pdftex.def Info: codesourcelicence2.png  used on input line 3157.
+(pdftex.def)             Requested size: 250.41425pt x 166.93369pt.
+<licencelogiciel.png, id=1742, 1269.24188pt x 883.04906pt>
+File: licencelogiciel.png Graphic file (type png)
+<use licencelogiciel.png>
+Package pdftex.def Info: licencelogiciel.png  used on input line 3169.
+(pdftex.def)             Requested size: 250.41425pt x 174.20827pt.
+[32 <./DevOps2.png> <./integration.png> <./integration2.png> <./codesourcelicence1.png> <./codesourcelicence2.png>]
+<Ethique1.png, id=1760, 1874.50313pt x 740.7675pt>
+File: Ethique1.png Graphic file (type png)
+<use Ethique1.png>
+Package pdftex.def Info: Ethique1.png  used on input line 3194.
+(pdftex.def)             Requested size: 250.41425pt x 98.9594pt.
+<Ethique2.png, id=1761, 1044.90375pt x 679.78969pt>
+File: Ethique2.png Graphic file (type png)
+<use Ethique2.png>
+Package pdftex.def Info: Ethique2.png  used on input line 3226.
+(pdftex.def)             Requested size: 250.41425pt x 162.91428pt.
+ [33 <./licencelogiciel.png> <./Ethique1.png> <./Ethique2.png>]
+<patcreav1.png, id=1773, 1323.44438pt x 877.02657pt>
+File: patcreav1.png Graphic file (type png)
+<use patcreav1.png>
+Package pdftex.def Info: patcreav1.png  used on input line 3234.
+(pdftex.def)             Requested size: 417.35992pt x 276.57262pt.
+<patcreav2.png, id=1774, 1322.69156pt x 874.01532pt>
+File: patcreav2.png Graphic file (type png)
+<use patcreav2.png>
+Package pdftex.def Info: patcreav2.png  used on input line 3243.
+(pdftex.def)             Requested size: 417.35992pt x 275.78305pt.
+<patcreav3.png, id=1775, 1322.69156pt x 874.76813pt>
+File: patcreav3.png Graphic file (type png)
+<use patcreav3.png>
+Package pdftex.def Info: patcreav3.png  used on input line 3252.
+(pdftex.def)             Requested size: 417.35992pt x 276.02058pt.
+ [34 <./patcreav1.png> <./patcreav2.png>] [35 <./patcreav3.png>] (./prepFinal.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 56104 strings out of 478287
- 1276845 string characters out of 5849289
- 2964858 words of memory out of 5000000
- 72378 multiletter control sequences out of 15000+600000
+ 56770 strings out of 478287
+ 1288947 string characters out of 5849289
+ 2964859 words of memory out of 5000000
+ 72703 multiletter control sequences out of 15000+600000
  547699 words of font info for 90 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  105i,8n,103p,765b,2859s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/kurier/mi-kurier.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/kurier/ec-kurier.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/kurier/ec-kurier-sc.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/calligra-type1/callig15.pfb></usr/share/texlive/texmf-dist/fonts/type1/nowacki/kurier/kurierb.pfb></usr/share/texlive/texmf-dist/fonts/type1/nowacki/kurier/kurierr.pfb></usr/share/texlive/texmf-dist/fonts/type1/nowacki/kurier/kurierri.pfb></usr/share/texmf/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtk10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb>
-Output written on prepFinal.pdf (25 pages, 9658798 bytes).
+Output written on prepFinal.pdf (36 pages, 18627022 bytes).
 PDF statistics:
- 1808 PDF objects out of 2073 (max. 8388607)
- 1529 compressed objects within 16 object streams
- 909 named destinations out of 1000 (max. 500000)
- 1155 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2341 PDF objects out of 2487 (max. 8388607)
+ 1961 compressed objects within 20 object streams
+ 1197 named destinations out of 1200 (max. 500000)
+ 1475 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,76 +1,90 @@
 \babel@toc {french}{}\relax 
-\contentsline {chapter}{\numberline {1}Object Constraint Language OCL \texttt {\S Amal 14} }{3}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Expression de contraintes}{3}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Collections}{5}{section.1.2}%
-\contentsline {section}{\numberline {1.3}Accès aux objets et navigation}{5}{section.1.3}%
-\contentsline {section}{\numberline {1.4}Opérations de base sur les collections}{5}{section.1.4}%
-\contentsline {chapter}{\numberline {2}Architecture \texttt {\S \tmspace +\thickmuskip {.2777em} Amal 15}}{8}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Conceptions Architecturale}{8}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Propriétés d'une conception de bonne qualité}{8}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Propriétés d'une mauvaise conception}{8}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Réutiliosation de logiciel}{8}{section.2.4}%
-\contentsline {paragraph}{}{8}{paragraph*.3}%
-\contentsline {section}{\numberline {2.5}Exemples et framework}{8}{section.2.5}%
-\contentsline {section}{\numberline {2.6}Integration de composant}{9}{section.2.6}%
-\contentsline {section}{\numberline {2.7}Styles d'architecture}{9}{section.2.7}%
-\contentsline {paragraph}{Pipe et Filtre}{9}{paragraph*.4}%
-\contentsline {paragraph}{Par Couches}{9}{paragraph*.5}%
-\contentsline {paragraph}{Client-Serveur}{9}{paragraph*.6}%
-\contentsline {paragraph}{Modèle-Vue-Contrôleur (MVC)}{9}{paragraph*.7}%
-\contentsline {paragraph}{Pair à Pair (P2P)}{9}{paragraph*.8}%
-\contentsline {paragraph}{Cloud}{9}{paragraph*.9}%
-\contentsline {section}{\numberline {2.8}Compromis du client}{9}{section.2.8}%
-\contentsline {section}{\numberline {2.9}Importance de l'architecture}{9}{section.2.9}%
-\contentsline {chapter}{\numberline {3}Paradigme Orienté Objet \texttt {\S \tmspace +\thickmuskip {.2777em} Amal 16}}{9}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Classe}{9}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Objet}{10}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Distinction entre classe et objet}{10}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Héritage}{10}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Modificateur d'accès}{10}{section.3.5}%
-\contentsline {section}{\numberline {3.6}Overriding}{10}{section.3.6}%
-\contentsline {section}{\numberline {3.7}Polymorphisme}{10}{section.3.7}%
-\contentsline {section}{\numberline {3.8}Abstraction}{10}{section.3.8}%
-\contentsline {section}{\numberline {3.9}Encapsulation}{11}{section.3.9}%
-\contentsline {section}{\numberline {3.10}Raffinement par étrape}{11}{section.3.10}%
-\contentsline {section}{\numberline {3.11}Dissimulation}{11}{section.3.11}%
-\contentsline {section}{\numberline {3.12}Avantages de l'OOP}{11}{section.3.12}%
-\contentsline {section}{\numberline {3.13}Désavantages de l'OOP}{11}{section.3.13}%
-\contentsline {chapter}{\numberline {4}Patrons de conception \texttt {\S \tmspace +\thickmuskip {.2777em} Amal 17} }{11}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Patron Singleton}{12}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Patron adapteur}{12}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Patron Composite}{13}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Patron Factory}{14}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Patron de méthode}{15}{section.4.5}%
-\contentsline {section}{\numberline {4.6}Patron Stratégie}{15}{section.4.6}%
-\contentsline {section}{\numberline {4.7}Patron Builder}{16}{section.4.7}%
-\contentsline {section}{\numberline {4.8}Patron Observer}{16}{section.4.8}%
-\contentsline {section}{\numberline {4.9}Force des patrons de conceptions}{17}{section.4.9}%
-\contentsline {section}{\numberline {4.10}Faiblesse des patrons de conception}{17}{section.4.10}%
-\contentsline {chapter}{\numberline {5}Implémentation}{17}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Flux d'implémentation}{18}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Tâches d'implémentation}{18}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Diversité des langages de programmation}{18}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Bonnes pratiques de programmation}{18}{section.5.4}%
-\contentsline {section}{\numberline {5.5}Normes de programmation}{19}{section.5.5}%
-\contentsline {section}{\numberline {5.6}Outils de programmation}{19}{section.5.6}%
-\contentsline {section}{\numberline {5.7}Débogage}{19}{section.5.7}%
-\contentsline {section}{\numberline {5.8}Cycle de vie d'un bogue}{19}{section.5.8}%
-\contentsline {chapter}{\numberline {6}Vérification et validation \texttt {\S \tmspace +\thickmuskip {.2777em} Amal 19} }{20}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Pertinence fonctionnelle}{20}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Performance}{20}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Compatibilité}{20}{section.6.3}%
-\contentsline {section}{\numberline {6.4}Usabilité}{20}{section.6.4}%
-\contentsline {section}{\numberline {6.5}Fiabilité}{20}{section.6.5}%
-\contentsline {section}{\numberline {6.6}Sécurité}{21}{section.6.6}%
-\contentsline {section}{\numberline {6.7}Maintenabilité}{21}{section.6.7}%
-\contentsline {section}{\numberline {6.8}Transférabilité}{21}{section.6.8}%
-\contentsline {section}{\numberline {6.9}Assurance Qualité}{21}{section.6.9}%
-\contentsline {section}{\numberline {6.10}Logiciel fiable}{22}{section.6.10}%
-\contentsline {section}{\numberline {6.11}Vérifinication sans exécution}{22}{section.6.11}%
-\contentsline {section}{\numberline {6.12}Code Review}{22}{section.6.12}%
-\contentsline {section}{\numberline {6.13}Test}{22}{section.6.13}%
-\contentsline {section}{\numberline {6.14}Stratégies pour tester}{23}{section.6.14}%
-\contentsline {section}{\numberline {6.15}Comment sélectionner les cas de test}{23}{section.6.15}%
-\contentsline {section}{\numberline {6.16}Boîte blanche : tester tous les chemins possibles du code}{23}{section.6.16}%
-\contentsline {section}{\numberline {6.17}Types de tests}{24}{section.6.17}%
+\contentsline {chapter}{\numberline {1}Object Constraint Language OCL \texttt {\S \tmspace +\thickmuskip {.2777em} Amal 14} }{4}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Expression de contraintes}{4}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Collections}{6}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Accès aux objets et navigation}{6}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Opérations de base sur les collections}{6}{section.1.4}%
+\contentsline {chapter}{\numberline {2}Architecture \texttt {\S \tmspace +\thickmuskip {.2777em} Amal 15}}{9}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Conceptions Architecturale}{9}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Propriétés d'une conception de bonne qualité}{9}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Propriétés d'une mauvaise conception}{9}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Réutiliosation de logiciel}{9}{section.2.4}%
+\contentsline {paragraph}{}{9}{paragraph*.3}%
+\contentsline {section}{\numberline {2.5}Exemples et framework}{9}{section.2.5}%
+\contentsline {section}{\numberline {2.6}Integration de composant}{10}{section.2.6}%
+\contentsline {section}{\numberline {2.7}Styles d'architecture}{10}{section.2.7}%
+\contentsline {paragraph}{Pipe et Filtre}{10}{paragraph*.4}%
+\contentsline {paragraph}{Par Couches}{10}{paragraph*.5}%
+\contentsline {paragraph}{Client-Serveur}{10}{paragraph*.6}%
+\contentsline {paragraph}{Modèle-Vue-Contrôleur (MVC)}{10}{paragraph*.7}%
+\contentsline {paragraph}{Pair à Pair (P2P)}{10}{paragraph*.8}%
+\contentsline {paragraph}{Cloud}{10}{paragraph*.9}%
+\contentsline {section}{\numberline {2.8}Compromis du client}{10}{section.2.8}%
+\contentsline {section}{\numberline {2.9}Importance de l'architecture}{10}{section.2.9}%
+\contentsline {chapter}{\numberline {3}Paradigme Orienté Objet \texttt {\S \tmspace +\thickmuskip {.2777em} Amal 16}}{10}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Classe}{10}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Objet}{11}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Distinction entre classe et objet}{11}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Héritage}{11}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Modificateur d'accès}{11}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Overriding}{11}{section.3.6}%
+\contentsline {section}{\numberline {3.7}Polymorphisme}{11}{section.3.7}%
+\contentsline {section}{\numberline {3.8}Abstraction}{11}{section.3.8}%
+\contentsline {section}{\numberline {3.9}Encapsulation}{12}{section.3.9}%
+\contentsline {section}{\numberline {3.10}Raffinement par étrape}{12}{section.3.10}%
+\contentsline {section}{\numberline {3.11}Dissimulation}{12}{section.3.11}%
+\contentsline {section}{\numberline {3.12}Avantages de l'OOP}{12}{section.3.12}%
+\contentsline {section}{\numberline {3.13}Désavantages de l'OOP}{12}{section.3.13}%
+\contentsline {chapter}{\numberline {4}Patrons de conception \texttt {\S \tmspace +\thickmuskip {.2777em} Amal 17} }{12}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Patron Singleton}{13}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Patron adapteur}{13}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Patron Composite}{14}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Patron Factory}{15}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Patron de méthode}{16}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Patron Stratégie}{16}{section.4.6}%
+\contentsline {section}{\numberline {4.7}Patron Builder}{17}{section.4.7}%
+\contentsline {section}{\numberline {4.8}Patron Observer}{17}{section.4.8}%
+\contentsline {section}{\numberline {4.9}Force des patrons de conceptions}{18}{section.4.9}%
+\contentsline {section}{\numberline {4.10}Faiblesse des patrons de conception}{18}{section.4.10}%
+\contentsline {chapter}{\numberline {5}Implémentation \texttt {\S \tmspace +\thickmuskip {.2777em} Amal 18} }{18}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Flux d'implémentation}{19}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Tâches d'implémentation}{19}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Diversité des langages de programmation}{19}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Bonnes pratiques de programmation}{19}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Normes de programmation}{20}{section.5.5}%
+\contentsline {section}{\numberline {5.6}Outils de programmation}{20}{section.5.6}%
+\contentsline {section}{\numberline {5.7}Débogage}{20}{section.5.7}%
+\contentsline {section}{\numberline {5.8}Cycle de vie d'un bogue}{20}{section.5.8}%
+\contentsline {chapter}{\numberline {6}Vérification et validation \texttt {\S \tmspace +\thickmuskip {.2777em} Amal 19} }{21}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Pertinence fonctionnelle}{21}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Performance}{21}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Compatibilité}{21}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Usabilité}{21}{section.6.4}%
+\contentsline {section}{\numberline {6.5}Fiabilité}{21}{section.6.5}%
+\contentsline {section}{\numberline {6.6}Sécurité}{22}{section.6.6}%
+\contentsline {section}{\numberline {6.7}Maintenabilité}{22}{section.6.7}%
+\contentsline {section}{\numberline {6.8}Transférabilité}{22}{section.6.8}%
+\contentsline {section}{\numberline {6.9}Assurance Qualité}{22}{section.6.9}%
+\contentsline {section}{\numberline {6.10}Logiciel fiable}{23}{section.6.10}%
+\contentsline {section}{\numberline {6.11}Vérifinication sans exécution}{23}{section.6.11}%
+\contentsline {section}{\numberline {6.12}Code Review}{23}{section.6.12}%
+\contentsline {section}{\numberline {6.13}Test}{23}{section.6.13}%
+\contentsline {section}{\numberline {6.14}Stratégies pour tester}{24}{section.6.14}%
+\contentsline {section}{\numberline {6.15}Comment sélectionner les cas de test}{24}{section.6.15}%
+\contentsline {section}{\numberline {6.16}Boîte blanche : tester tous les chemins possibles du code}{24}{section.6.16}%
+\contentsline {section}{\numberline {6.17}Types de tests}{25}{section.6.17}%
+\contentsline {section}{\numberline {6.18}Qui devrait tester}{26}{section.6.18}%
+\contentsline {section}{\numberline {6.19}Combien de faute faut-il identifier}{26}{section.6.19}%
+\contentsline {section}{\numberline {6.20}En pratique, quand s'arrêter ?}{26}{section.6.20}%
+\contentsline {chapter}{\numberline {7}Tests unitaires \texttt {\S Amal 20} }{26}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Quand effectuer les tests unitaires}{26}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Converture de tests pour une unité}{27}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Syntaxe JUnit}{27}{section.7.3}%
+\contentsline {section}{\numberline {7.4}Assertions}{27}{section.7.4}%
+\contentsline {section}{\numberline {7.5}Conseils pour rédaction de tests unitaires}{28}{section.7.5}%
+\contentsline {section}{\numberline {7.6}Tester en isolation}{29}{section.7.6}%
+\contentsline {chapter}{\numberline {8}Déploiement \texttt {\S \tmspace +\thickmuskip {.2777em} Amal 21} }{30}{chapter.8}%
+\contentsline {chapter}{\numberline {9}Licence et éthique \texttt {\S \tmspace +\thickmuskip {.2777em} Amal 23 } }{32}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Licences}{32}{section.9.1}%
+\contentsline {section}{\numberline {9.2}Étique professionnelle}{33}{section.9.2}%
 \contentsfinish 
